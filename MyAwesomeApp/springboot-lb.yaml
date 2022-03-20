@@ -50,3 +50,7 @@ spec:
         backend:
           serviceName: maxweather-app-svc
           servicePort: 8085
+      - path: /now
+        backend:
+          serviceName: maxweather-app-svc
+          servicePort: 8085
