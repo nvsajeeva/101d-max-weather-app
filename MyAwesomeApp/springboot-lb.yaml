@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: my-ak-deployment
+  namespace: nginx-ingress
 spec:
   replicas: 2
   selector:
@@ -24,6 +25,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: angular-app-svc
+  namespace: nginx-ingress
 spec:
   selector:
     app: angular-app
@@ -31,4 +33,4 @@ spec:
     - protocol: TCP
       port: 8085
       targetPort: 8085
-  type: LoadBalancer
+      name: http
