@@ -34,7 +34,7 @@ spec:
       port: 8085
       targetPort: 8085
       name: http
-
+  type: LoadBalancer
 ---
 apiVersion: extensions/v1beta1
 kind: Ingress
