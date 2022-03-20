@@ -43,8 +43,8 @@ metadata:
   namespace: nginx-ingress
 spec:
   rules:
-  - host: maxweather.com 
-    http:
+#  - host: maxweather.com 
+   - http:
       paths:
       - path: /
         backend:
